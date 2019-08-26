@@ -1,0 +1,327 @@
+/* =========
+   Get Fonts */
+@import url(https://fonts.googleapis.com/css?family=Quicksand);
+/* ================
+   Assign Variables */
+/* ===========================
+   Setup Mixins/Helper Classes */
+.clearfix:after, .calendar ol:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+/* ==========
+   Setup Page */
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 3em;
+    background-image: url(https://subtlepatterns.com/patterns/retina_wood.png);
+    color: grey;
+    font-family: "Quicksand", sans-serif;
+}
+
+/* ================
+   Calendar Styling */
+.calendar .menu  {
+    text-transform: uppercase;
+    margin-bottom: 0.5em;
+    font-size: 3em;
+}
+
+.calendar {
+    background: white;
+    padding: 3em;
+    border-radius: 10px;
+}
+.calendar .month {
+     margin-top: 0;
+     font-weight: normal;
+     font-size: 3em;
+     color: #6EB590;
+ }
+.calendar .months {
+    margin-top: 0;
+    font-weight: normal;
+    font-size: 3em;
+    color: darkslategrey;
+}
+.calendar .multiple {
+    margin-top: 0;
+    font-weight: normal;
+    font-size: 2em;
+    color: black;
+}
+.calendar ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.calendar ol li {
+    float: left;
+    width: 14.2857142857%;
+}
+.calendar .day-names {
+    border-bottom: 1px solid #eee;
+}
+.calendar .day-names li {
+    text-transform: uppercase;
+    margin-bottom: 0.5em;
+}
+.calendar .days li {
+    border-bottom: 1px solid #eee;
+    min-height: 8em;
+}
+.calendar .days li .date {
+    margin: 0.5em 0;
+}
+.calendar .days li .event {
+    background: #6EB590;
+    font-size: 0.75em;
+    padding: 0 0.75em;
+    line-height: 2em;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-radius: 1em;
+    margin-bottom: 1px;
+}
+.calendar .days li .event.span-2 {
+    width: 200%;
+}
+.calendar .days li .event.begin {
+      border-radius: 1em 0 0 1em;
+  }
+.calendar .days li .event.end {
+    border-radius: 0 1em 1em 0;
+}
+.calendar .days li .event.all-day {
+    background: #9987B5;
+}
+.calendar .days li .event.all-day-r {
+    background: gray;
+}
+.calendar .days li .event.all-day-r1 {
+    background: darkolivegreen;
+}
+.calendar .days li .event.all-day-r2 {
+    background: dimgrey;
+}
+.calendar .days li .event.all-day-r3 {
+    background: darkslategrey;
+}
+.calendar .days li .event.all-day-r4 {
+    background: red;
+}
+.calendar .days li .event.all-day-r5 {
+    border-radius: 1em 0 0 1em;
+}
+.calendar .days li .event.all-day-r6 {
+    background: #9987B5;
+}
+.calendar .days li .event.all-day-r7 {
+    background: gray;
+}
+.calendar .days li .event.all-day-r8 {
+    background: darkolivegreen;
+}
+.calendar .days li .event.all-day-r9 {
+    background: dimgrey;
+}
+.calendar .days li .event.all-day-r10 {
+    background: darkslategrey;
+}
+.calendar .days li .event.all-day-r11 {
+    background: red;
+}
+.calendar .days li .event.all-day-r12 {
+    border-radius: 1em 0 0 1em;
+}
+.calendar .days li .event.all-day-r13 {
+    background: #9987B5;
+}
+.calendar .days li .event.all-day-r14 {
+    background: gray;
+}
+.calendar .days li .event.all-day-r15 {
+    background: darkolivegreen;
+}
+.calendar .days li .event.all-day-r16 {
+    background: dimgrey;
+}
+.calendar .days li .event.all-day-r17 {
+    background: darkslategrey;
+}
+.calendar .days li .event.all-day-r18 {
+    background: red;
+}
+.calendar .days li .event.all-day-r19 {
+    border-radius: 1em 0 0 1em;
+}
+.calendar .days li .event.all-day-r20 {
+    background: #9987B5;
+}
+.calendar .days li .event.all-day-r21 {
+    background: gray;
+}
+.calendar .days li .event.all-day-r22 {
+    background: darkolivegreen;
+}
+.calendar .days li .event.all-day-r23 {
+    background: dimgrey;
+}
+.calendar .days li .event.all-day-r24 {
+    background: darkslategrey;
+}
+.calendar .days li .event.all-day-r25 {
+    background: red;
+}
+.calendar .days li .event.all-day-r26 {
+    border-radius: 1em 0 0 1em;
+}
+.calendar .days li .event.all-day-r27 {
+    background: #9987B5;
+}
+.calendar .days li .event.all-day-r28 {
+    background: gray;
+}
+
+.calendar .days li .event.clear {
+    background: none;
+}
+.calendar .days li:nth-child(n+29) {
+    border-bottom: none;
+}
+.calendar .days li.outside .date {
+    color: #ddd;
+}
+
+.deleteButton{
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+
+.page-wrapper{
+    width:100%;
+    height:100%;
+    background:url(https://i.imgur.com/2ZgHKbQ.jpg) center no-repeat;
+    background-size:cover;
+}
+
+.blur{
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+}
+
+a.btn{
+    width:150px;
+    display:block;
+    margin:-25px 0 0 -75px;
+    padding:1em 0;
+    position:absolute;
+    top:50%; left:50%;
+    font:1.125em 'Arial', sans-serif;
+    font-weight:700;
+    text-align:center;
+    text-decoration:none;
+    color:#fff;
+    border-radius:5px;
+    background:rgba(217,67,86,1);
+}
+
+.modal-wrapper{
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0; left:0;
+    background:rgba(0,0,0,0.75);
+    visibility:hidden;
+    opacity:0;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
+
+.modal-wrapper.open{
+    opacity:1;
+    visibility:visible;
+}
+
+.modal{
+    width:600px;
+    height:400px;
+    display:block;
+    margin:50% 0 0 -300px;
+    position:relative;
+    top:50%; left:50%;
+    background:#fff;
+    opacity:0;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.modal-wrapper.open .modal{
+    margin-top:-200px;
+    opacity:1;
+}
+
+.head{
+    width:90%;
+    height:32px;
+    padding:1.5em 5%;
+    overflow:hidden;
+    background:#fff;
+    color: #000;
+}
+
+.btn-close{
+    width:32px;
+    height:32px;
+    display:block;
+    float:right;
+    color: black;
+}
+
+.btn-close::before, .btn-close::after{
+    content:'';
+    width:32px;
+    height:6px;
+    display:block;
+    background:#fff;
+}
+
+.btn-close::before{
+    margin-top:12px;
+    -webkit-transform:rotate(45deg);
+    -moz-transform:rotate(45deg);
+    -o-transform:rotate(45deg);
+    transform:rotate(45deg);
+}
+
+.btn-close::after{
+    margin-top:-6px;
+    -webkit-transform:rotate(-45deg);
+    -moz-transform:rotate(-45deg);
+    -o-transform:rotate(-45deg);
+    transform:rotate(-45deg);
+}
+
+.content{
+    padding:5%;
+}
